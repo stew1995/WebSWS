@@ -30,21 +30,23 @@
     display: inline-block;
     width:40%;
     padding-top: 5px;
+    background: white;
 }
 
 .searchBar {
     padding-left: 16px  ;
+    background: white;
 }
 
 .drop {
     width: 250px;
 }
 
-..dropdown-content a {
+.dropdown-content a {
     width: 250px;
 }
 .dropdown-content a:hover {
-    background: #f3e5f5;
+    background: #EEEEEE;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
