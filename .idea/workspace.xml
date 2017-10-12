@@ -4,8 +4,6 @@
     <list default="true" id="1c0fbea9-328f-43a6-b625-1ffc35110164" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/navigation.css" afterPath="$PROJECT_DIR$/css/navigation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/navigation.js" afterPath="$PROJECT_DIR$/js/navigation.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="353">
@@ -47,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/navigation.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+            <state relative-caret-position="594">
+              <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -276,12 +274,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507799758318</updated>
       <workItem from="1507799759642" duration="985000" />
-      <workItem from="1507801560866" duration="9073000" />
+      <workItem from="1507801560866" duration="9250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10058000" />
+    <option name="totallyTimeSpent" value="10235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="815" height="1047" extended-state="0" />
@@ -360,18 +358,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/navigation.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="594">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/navigation.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        <state relative-caret-position="353">
+          <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="46" />
           <folding />
         </state>
       </provider>

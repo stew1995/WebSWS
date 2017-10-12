@@ -40,6 +40,9 @@
     width: 250px;
 }
 
+..dropdown-content a {
+    width: 250px;
+}
 .dropdown-content a:hover {
     background: #f3e5f5;
 }
