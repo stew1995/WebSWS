@@ -8,3 +8,19 @@
     height: 900px;
     padding: 0;
 }
+
+/*Location list*/
+.scrollable {
+    height: 900px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.checkbox-orange[type="checkbox"].filled-in:checked + label:after{
+    border: 2px solid #ff9800;
+    background-color: #ff9800;
+}
+.locationHeading {
+    background-color: #03A9F4;
+}
+

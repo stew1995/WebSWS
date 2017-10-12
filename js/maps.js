@@ -9,3 +9,5 @@ function initMap() {
         map: map
     });
 }
+
+$('.dropdown-button').dropdown('open');
