@@ -23,3 +23,5 @@ $(document).ready(function () {
     // Plugin initialization
     $('.slider').slider();
 })
+
+$('.dropdown-button').dropdown('open');
