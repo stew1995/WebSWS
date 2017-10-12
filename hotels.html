@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visiting Portsmouth</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
+    <link type="text/css" rel="stylesheet" href="css/navigation.css"  />
+    <link type="text/css" rel="stylesheet" href="css/layout.css"  />
+    <link type="text/css" rel="stylesheet" href="css/index.css"  />
+    <link type="text/css" rel="stylesheet" href=css/hotels.css"  />
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   
+    <script>
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+    </script>
+
+</head>
+<body>
+<!--Navigation-->
+<div class="navigation" id="nav">
+    <a href="#home">Home</a>
+    <a href="#whatson">What's On</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#foodanddrink">Food and Drink</a>
+    <a href="#map">Map</a>
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-button drop' href='#' data-activates='dropdown1'>Things to do</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content ' >
+        <li><a href="#!">Attractions</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Historical Places <i class="material-icons right">chevron_right</i></a></li>
+        <li><a href="#!">Pyramid center <i class="material-icons right">chevron_right</i></a></li>
+        <li><a href="#!">Mountbatten center<i class="material-icons right">chevron_right</i></a></li>
+        <li><a href="#!">Aquarium <i class="material-icons right">chevron_right</i> </a></li>
+        <li><a href="#!">Spinnaker Tower <i class="material-icons right">chevron_right</i></a></li>
+        <li><a href="#!">V and A park <i class="material-icons right">chevron_right</i></a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Cinema <i class="material-icons right">chevron_right</i></a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Shopping</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Commercial Road <i class="material-icons right">chevron_right</i></a></li>
+        <li><a href="#!">Gunwarf <i class="material-icons right">chevron_right</i></a></li>
+        <li class="divider"></li>
+        <li><a href="#!">City Library <i class="material-icons right">chevron_right</i></a></li>
+    </ul>
+    <div class="searchBox">
+        <input type="search" class="searchBar">
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="right" style="margin-right:50px">
+ <div class="container" style="margin-top:80px">
+    <select class="browser-default" style="width:200px">
+     <option value="">Sort by...</option>
+     <option value="1">Cost</option>
+     <option value="2">Distance</option>
+    </select>
+ </div>
+</div>
+
+<div class="row"> </div>
+<footer>
+    This is the footer
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/navigation.js"></script>
+
+</body>
+</html>
