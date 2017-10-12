@@ -17,10 +17,14 @@
 }
 
 .checkbox-orange[type="checkbox"].filled-in:checked + label:after{
-    border: 2px solid #ff9800;
-    background-color: #ff9800;
+    border: 2px solid #03A9F4;
+    background-color: #03A9F4;
 }
 .locationHeading {
     background-color: #03A9F4;
+}
+
+.card {
+    height: auto;
 }
 
