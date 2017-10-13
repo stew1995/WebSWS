@@ -4,7 +4,7 @@ function initMap() {
         zoom: 12,
         center: portsmouth
     });
-    
+
 
     //location lat lng
     var portsmouthHrb= {lat: 50.796947, lng: -1.107811};
@@ -39,7 +39,7 @@ function initMap() {
 
 
     //Google map marker variable
-    if(allChk) {
+    if(allChk = true) {
         var hrbMarker = new google.maps.Marker({
             position: portsmouthHrb,
             map: map

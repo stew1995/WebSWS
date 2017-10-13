@@ -1,17 +1,21 @@
 #map {
-    height: 900px;
+    height: 400px;
     width: 100%;
 
 }
 
-.mapsBody {
-    height: 900px;
+.taxiContainor {
     padding: 0;
+}
+
+.mapsBody {
+    padding: 0;
+    height: 400px;
 }
 
 /*Location list*/
 .scrollable {
-    height: 900px;
+    height: 400px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -28,3 +32,16 @@
     height: auto;
 }
 
+/*Media query for maps page*/
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    #map {height: 500px;}
+    .mapsBody {height: 500px}
+
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    #map {height: 600px;}
+    .mapsBody {height: 600px}
+
+}
