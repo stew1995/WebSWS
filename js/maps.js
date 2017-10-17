@@ -42,67 +42,80 @@ function initMap() {
     if(allChk = true) {
         var hrbMarker = new google.maps.Marker({
             position: portsmouthHrb,
-            map: map
+            map: map,
+            label: "T"
         });
 
         var sthMarker = new google.maps.Marker({
             position: portsmouthSth,
-            map: map
+            map: map,
+            label: "T"
         });
 
         var frattonMarker = new google.maps.Marker({
             position: fratton,
-            map: map
+            map: map,
+            label: "T"
         });
 
         var coshamMarker = new google.maps.Marker({
             position: cosham,
-            map: map
+            map: map,
+            label: "T"
         });
 
         var havantMarker = new google.maps.Marker({
             position: havant,
-            map: map
+            map: map,
+            label: "T"
         });
 
         var pyramidMarker = new google.maps.Marker({
             position: pyramid,
-            map: map
+            map: map,
+            label: "A"
         });
 
         var mountMarker = new google.maps.Marker({
             position: mountbatten,
-            map: map
+            map: map,
+            label: "A"
         });
 
         var aquariumMarker = new google.maps.Marker({
             position: aquarium,
-            map: map
+            map: map,
+            label: "A"
         });
 
         var spinnakerMarker = new google.maps.Marker({
             position: spinnaker,
-            map: map
+            map: map,
+            label: "A"
         });
 
         var victoriaMarker = new google.maps.Marker({
             position: victoria,
-            map: map
+            map: map,
+            label: "A"
         });
 
         var gunwarfMarker = new google.maps.Marker({
             position: gunwarf,
-            map: map
+            map: map,
+            label: "S"
         });
 
         var commercialMarker = new google.maps.Marker({
             position: commercial,
-            map: map
+            map: map,
+            label: "S"
         });
 
         var libraryMarker = new google.maps.Marker({
             position: library,
-            map: map
+            map: map,
+            label: "L"
         });
     } else if (portsmouthHrbChk) {
         var hrbMarker = new google.maps.Marker({
