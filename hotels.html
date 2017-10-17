@@ -42,14 +42,13 @@
 
         var lat1 = currentLocation.latitude
         var lon1 = currentLocation.longitude
-      //  var lngLat1 = new google.maps.LatLng(lat1, lon1);
-      lat1 = locationNow.lat1
-      lon1 = locationNow.lon1
-       //var loc1 = new google.maps.LatLng(37.772323, -122.214897);
-      // var loc2 = new google.maps.LatLng(34.1633766,-81.6487862);
-              var lngLat1 = new google.maps.LatLng(lat1, lon1);
-              var PremierInnPortsmouthNorthHarbourLatLng = new google.maps.LatLng(lngLat1, PremierInnPortsmouthNorthHarbourLatLng);
-         navigator.geolocation.getCurrentPosition(locationNow, options);
+        //var loc1 = new google.maps.LatLng(37.772323, -122.214897);
+        //var loc2 = new google.maps.LatLng(34.1633766,-81.6487862);
+        var loc1 = new google.maps.LatLng(50.8457, 1.0920); //hotel1
+             var loc2 = new google.maps.LatLng(lat1, lon1);
+
+             console.log(google.maps.geometry.spherical.computeDistanceBetween(loc1,loc2));
+
 
       // console.log(google.maps.geometry.spherical.computeDistanceBetween(loc1,loc2));
         }
@@ -60,13 +59,13 @@
         var lon1 = locationNow.lon1
         //var loc1 = new google.maps.LatLng(37.772323, -122.214897);
         var loc2 = new google.maps.LatLng(34.1633766,-81.6487862);
-        var loc1 = new google.maps.LatLng(50.8457, 1.0920);
-        //        var loc2 = new google.maps.LatLng(lat1, lon1);
+        var loc1 = new google.maps.LatLng(50.8457, 1.0920); //hotel1
+             var loc2 = new google.maps.LatLng(lat1, lon1);
 
              console.log(google.maps.geometry.spherical.computeDistanceBetween(loc1,loc2));
       }
-     //navigator.geolocation.getCurrentPosition(locationNow, options);
-     initMap();
+     navigator.geolocation.getCurrentPosition(locationNow, options);
+     //initMap();
      //distanceBetween(fromLat, fromLong, toLat, toLong);
    </script>
 
