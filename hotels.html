@@ -13,21 +13,63 @@
     <link type="text/css" rel="stylesheet" href="css/layout.css"  />
     <link type="text/css" rel="stylesheet" href="css/index.css"  />
     <link type="text/css" rel="stylesheet" href=css/hotels.css"  />
-    
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   
+
     <script>
   $(document).ready(function() {
     $('select').material_select();
   });
     </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaSVJU7ivgUDGC5rCMOvMznTtL6eaxZnY&libraries=geometry"></script>
 
-   <style>
 
-   </style>
+   <script type="text/javascript">
+      var PremierInnPortsmouthNorthHarbourLatLng = new google.maps.LatLng(50.8457, 1.0920);
 
-</head>
+      var options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+        };
+
+      function locationNow(pos) {
+        var currentLocation = pos.coords;
+
+        //console.log(`Latitude : ${currentLocation.latitude}`);
+        //console.log(`Longitude: ${currentLocation.longitude}`);
+
+        var lat1 = currentLocation.latitude
+        var lon1 = currentLocation.longitude
+      //  var lngLat1 = new google.maps.LatLng(lat1, lon1);
+      lat1 = locationNow.lat1
+      lon1 = locationNow.lon1
+       //var loc1 = new google.maps.LatLng(37.772323, -122.214897);
+      // var loc2 = new google.maps.LatLng(34.1633766,-81.6487862);
+              var lngLat1 = new google.maps.LatLng(lat1, lon1);
+              var PremierInnPortsmouthNorthHarbourLatLng = new google.maps.LatLng(lngLat1, PremierInnPortsmouthNorthHarbourLatLng);
+         navigator.geolocation.getCurrentPosition(locationNow, options);
+
+      // console.log(google.maps.geometry.spherical.computeDistanceBetween(loc1,loc2));
+        }
+
+
+      function initMap() {
+        var lat1 = locationNow.lat1
+        var lon1 = locationNow.lon1
+        //var loc1 = new google.maps.LatLng(37.772323, -122.214897);
+        var loc2 = new google.maps.LatLng(34.1633766,-81.6487862);
+        var loc1 = new google.maps.LatLng(50.8457, 1.0920);
+        //        var loc2 = new google.maps.LatLng(lat1, lon1);
+
+             console.log(google.maps.geometry.spherical.computeDistanceBetween(loc1,loc2));
+      }
+     //navigator.geolocation.getCurrentPosition(locationNow, options);
+     initMap();
+     //distanceBetween(fromLat, fromLong, toLat, toLong);
+   </script>
+
 <body>
 <!--Navigation-->
 <div class="navigation" id="nav">
@@ -407,6 +449,4 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/navigation.js"></script>
 <script type="text/javascript" src="js/hotels.js"></script>
-
 </body>
-</html>
