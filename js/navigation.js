@@ -25,3 +25,36 @@ $(document).ready(function () {
 })
 
 $('.dropdown-button').dropdown('open');
+
+
+
+//AJAX
+$(document).ready(function () {
+    //Navigation buttons
+    $("#homeBtn").click(function () {
+        $("#body").load("index.html");
+    });
+
+    //Whats on
+    /*
+    $("#whatsonBtn").click(function () {
+        $("#body").load("whatson.html")
+    });*/
+
+    $("#hotelsBtn").click(function () {
+        $("#body").load("hotels.html")
+    });
+
+    /*$("#foodanddrinkBtn").click(function () {
+        $("#body").load("hotels.html")
+    });*/
+
+    $("#mapBtn").click(function () {
+        $("#body").load("maps.html")
+    })
+
+
+    $("#attractionsBtn").click(function () {
+        $("#body").load("attractions.html")
+    });
+})

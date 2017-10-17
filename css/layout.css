@@ -40,6 +40,10 @@ html {
     width: 100%;
 }
 
+#body {
+    margin-top: 5px;
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}
