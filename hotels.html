@@ -27,30 +27,88 @@
 
    <script type="text/javascript">
 
-      var PremierInnPortsmouthNorthHarbourLatLng = new google.maps.LatLng(50.8457, 1.0920);
+     var options = {
+       enableHighAccuracy: true,
+       timeout: 5000,
+       maximumAge: 0
+       };
 
-      var options = {
-        enableHighAccuracy: true,
-        timeout: 5000,
-        maximumAge: 0
-        };
+     function locationNow(pos) {
+       var currentLocation = pos.coords;
 
-      function locationNow(pos) {
-        var currentLocation = pos.coords;
+       var lat1 = currentLocation.latitude
+       var lon1 = currentLocation.longitude
 
-        //console.log(`Latitude: ${currentLocation.latitude}`);
-        //console.log(`Longitude: ${currentLocation.longitude}`);
+       var PremierInnPortsmouthNorthHarbour = new google.maps.LatLng(50.8457, -1.0920);
+       var HolidayInnExpressNorth = new google.maps.LatLng(50.8362, -1.0413);
+       var MarriottHotelPortsmouth = new google.maps.LatLng(50.8458, -1.0905);
+       var QueensHotelPortsmouth = new google.maps.LatLng(50.7852, -1.0932);
+       var KeppelsHeadHotel = new google.maps.LatLng(50.7978, -1.1060);
 
-        //console.log('Latitude : ' + currentLocation.latitude);
-        //console.log('Longitude: ' + currentLocation.longitude);
-
-        var lat1 = currentLocation.latitude
-        var lon1 = currentLocation.longitude
         var loc1 = new google.maps.LatLng(lat1, lon1); //hotel1
         var loc2 = new google.maps.LatLng(50.8457, -1.0920);
 
-            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1,loc2) * 0.000621371192;
-            document.getElementById("demo").innerHTML = answer.toFixed(2) + " Miles Away";
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, PremierInnPortsmouthNorthHarbour) * 0.000621371192;
+            document.getElementById("PremierInnDistance").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, HolidayInnExpressNorth) * 0.000621371192;
+            document.getElementById("HolidayInnExpressDistance").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, MarriottHotelPortsmouth) * 0.000621371192;
+            document.getElementById("MarriottHotelDistance").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, QueensHotelPortsmouth) * 0.000621371192;
+            document.getElementById("QueensHotelDistance").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, KeppelsHeadHotel) * 0.000621371192;
+            document.getElementById("KeppelsHeadDistance").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, PremierInnPortsmouthNorthHarbour) * 0.000621371192;
+            document.getElementById("PremierInnDistance2").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, HolidayInnExpressNorth) * 0.000621371192;
+            document.getElementById("HolidayInnExpressDistance2").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, MarriottHotelPortsmouth) * 0.000621371192;
+            document.getElementById("MarriottHotelDistance2").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, QueensHotelPortsmouth) * 0.000621371192;
+            document.getElementById("QueensHotelDistance2").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, KeppelsHeadHotel) * 0.000621371192;
+            document.getElementById("KeppelsHeadDistance2").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, PremierInnPortsmouthNorthHarbour) * 0.000621371192;
+            document.getElementById("PremierInnDistance3").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, HolidayInnExpressNorth) * 0.000621371192;
+            document.getElementById("HolidayInnExpressDistance3").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, MarriottHotelPortsmouth) * 0.000621371192;
+            document.getElementById("MarriottHotelDistance3").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, QueensHotelPortsmouth) * 0.000621371192;
+            document.getElementById("QueensHotelDistance3").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, KeppelsHeadHotel) * 0.000621371192;
+            document.getElementById("KeppelsHeadDistance3").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, PremierInnPortsmouthNorthHarbour) * 0.000621371192;
+            document.getElementById("PremierInnDistance4").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, HolidayInnExpressNorth) * 0.000621371192;
+            document.getElementById("HolidayInnExpressDistance4").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, MarriottHotelPortsmouth) * 0.000621371192;
+            document.getElementById("MarriottHotelDistance4").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, QueensHotelPortsmouth) * 0.000621371192;
+            document.getElementById("QueensHotelDistance4").innerHTML = answer.toFixed(2) + " Miles Away";
+
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1, KeppelsHeadHotel) * 0.000621371192;
+            document.getElementById("KeppelsHeadDistance4").innerHTML = answer.toFixed(2) + " Miles Away";
+
+
         }
 
      navigator.geolocation.getCurrentPosition(locationNow, options);
@@ -114,7 +172,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <b><a href="http://www.premierinn.com/gb/en/hotels/england/hampshire/portsmouth/portsmouth-north-harbour.html">Premier Inn Portsmouth North Harbour</b></a>
-        <p id="demo"></p>
+        <p id="PremierInnDistance"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;48</b></a>
@@ -136,6 +194,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <a href="https://www.ihg.com/holidayinnexpress/hotels/gb/en/portsmouth/pmesp/hoteldetail"><b>Holiday Inn Express Portsmouth - North</b></a>
+        <p id="HolidayInnExpressDistance"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;90.25</b></a>
@@ -157,6 +216,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <a href="http://www.marriott.com/hotels/travel/pmeha-portsmouth-marriott-hotel/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2"><b>Marriott Hotel Portsmouth</b></a>
+        <p id="MarriottHotelDistance"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;94</b></a>
@@ -178,6 +238,7 @@
     <div class="card-stacked">
       <div class="card-content">
                                <a href="http://www.queenshotelportsmouth.com/"><b>Queens Hotel Portsmouth</b></a>
+        <p id="QueensHotelDistance"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;65</b></a>
@@ -199,6 +260,7 @@
     <div class="card-stacked">
       <div class="card-content">
                 <a href="https://www.booking.com/hotel/gb/keppels-head.en-gb.htm"><b>Keppels Head Hotel</b></a>
+        <p id="KeppelsHeadDistance"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;65</b></a>
@@ -219,7 +281,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <b><a href="http://www.premierinn.com/gb/en/hotels/england/hampshire/portsmouth/portsmouth-north-harbour.html">Premier Inn Portsmouth North Harbour</b></a>
-        <p></p>
+        <p id="PremierInnDistance2"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;48</b></a>
@@ -241,6 +303,7 @@
     <div class="card-stacked">
       <div class="card-content">
                                <a href="http://www.queenshotelportsmouth.com/"><b>Queens Hotel Portsmouth</b></a>
+        <p id="QueensHotelDistance2"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;65</b></a>
@@ -262,6 +325,7 @@
     <div class="card-stacked">
       <div class="card-content">
                 <a href="https://www.booking.com/hotel/gb/keppels-head.en-gb.htm"><b>Keppels Head Hotel</b></a>
+        <p id="KeppelsHeadDistance2"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;65</b></a>
@@ -283,6 +347,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <a href="https://www.ihg.com/holidayinnexpress/hotels/gb/en/portsmouth/pmesp/hoteldetail"><b>Holiday Inn Express Portsmouth - North</b></a>
+        <p id="HolidayInnExpressDistance2"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;90.25</b></a>
@@ -304,6 +369,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <a href="http://www.marriott.com/hotels/travel/pmeha-portsmouth-marriott-hotel/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2"><b>Marriott Hotel Portsmouth</b></a>
+        <p id="MarriottHotelDistance2"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;94</b></a>
@@ -315,7 +381,118 @@
   </div>
  </div>
 </div></div> </div>
-    <div id="Distance" class="col s12">Test 3</div>
+    <div id="Distance" class="col s12"> <div class="container">
+     <div class="col s12">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="http://www.premierinn.com/content/dam/pi/websites/hotelimages/gb/en/P/PORBAN/PORBAN%201.jpg">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <b><a href="http://www.premierinn.com/gb/en/hotels/england/hampshire/portsmouth/portsmouth-north-harbour.html">Premier Inn Portsmouth North Harbour</b></a>
+            <p id="PremierInnDistance4"></p>
+          </div>
+          <div class="card-action">
+            <a>Prices from <b>&pound;48</b></a>
+          </div>
+          <div class="card-action">
+            <a href="https://www.tripadvisor.co.uk/Hotel_Review-g186298-d1434849-Reviews-Premier_Inn_Portsmouth_North_Harbour_Hotel-Portsmouth_Hampshire_England.html#REVIEWS">&#9733; &#9733; &#9733; &#9733;</a>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="container">
+     <div class="col s12">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/352/35239077.jpg">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <a href="http://www.marriott.com/hotels/travel/pmeha-portsmouth-marriott-hotel/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2"><b>Marriott Hotel Portsmouth</b></a>
+            <p id="MarriottHotelDistance4"></p>
+          </div>
+          <div class="card-action">
+            <a>Prices from <b>&pound;94</b></a>
+          </div>
+          <div class="card-action">
+            <a href="https://www.tripadvisor.co.uk/Hotel_Review-g186298-d192502-Reviews-Portsmouth_Marriott_Hotel-Portsmouth_Hampshire_England.html">&#9733; &#9733; &#9733; &#9733;</a>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+  <div class="container">
+    <div class="col s12">
+     <div class="card horizontal">
+       <div class="card-image">
+         <img src="https://t-ec.bstatic.com/images/hotel/max500/168/1681631.jpg">
+       </div>
+       <div class="card-stacked">
+         <div class="card-content">
+                   <a href="https://www.booking.com/hotel/gb/keppels-head.en-gb.htm"><b>Keppels Head Hotel</b></a>
+           <p id="KeppelsHeadDistance4"></p>
+         </div>
+         <div class="card-action">
+           <a>Prices from <b>&pound;65</b></a>
+         </div>
+         <div class="card-action">
+           <a href="https://www.tripadvisor.co.uk/Hotel_Review-g186298-d193784-Reviews-Keppels_Head-Portsmouth_Hampshire_England.html">&#9733; &#9733; &#9733;</a>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+ </div>
+
+   <div class="container">
+    <div class="col s12">
+     <div class="card horizontal">
+       <div class="card-image">
+         <img src="http://ihg.scene7.com/is/image/ihg/holiday-inn-express-portsmouth-4649182920-4x3">
+       </div>
+       <div class="card-stacked">
+         <div class="card-content">
+           <a href="https://www.ihg.com/holidayinnexpress/hotels/gb/en/portsmouth/pmesp/hoteldetail"><b>Holiday Inn Express Portsmouth - North</b></a>
+           <p id="HolidayInnExpressDistance4"></p>
+         </div>
+         <div class="card-action">
+           <a>Prices from <b>&pound;90.25</b></a>
+         </div>
+         <div class="card-action">
+           <a href="https://www.tripadvisor.co.uk/Hotel_Review-g186298-d192503-Reviews-Holiday_Inn_Express_Portsmouth_North-Portsmouth_Hampshire_England.html">&#9733; &#9733; &#9733; &#9733; &#189;</a>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="container">
+    <div class="col s12">
+     <div class="card horizontal">
+       <div class="card-image">
+         <img src="http://www.queenshotelportsmouth.com/img/queens-front-view.jpg">
+       </div>
+       <div class="card-stacked">
+         <div class="card-content">
+                                  <a href="http://www.queenshotelportsmouth.com/"><b>Queens Hotel Portsmouth</b></a>
+           <p id="QueensHotelDistance4"></p>
+         </div>
+         <div class="card-action">
+           <a>Prices from <b>&pound;65</b></a>
+         </div>
+         <div class="card-action">
+           <a href="https://www.tripadvisor.co.uk/Hotel_Review-g186298-d215584-Reviews-Queen_s_Hotel-Portsmouth_Hampshire_England.html">&#9733; &#9733; &#9733; &#189;</a>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+
+  </div>
     <div id="Rating" class="col s12"> <div class="container">
  <div class="col s12">
   <div class="card horizontal">
@@ -325,6 +502,7 @@
     <div class="card-stacked">
       <div class="card-content">
                 <a href="https://www.booking.com/hotel/gb/keppels-head.en-gb.htm"><b>Keppels Head Hotel</b></a>
+        <p id="KeppelsHeadDistance3"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;65</b></a>
@@ -346,6 +524,7 @@
     <div class="card-stacked">
       <div class="card-content">
                                <a href="http://www.queenshotelportsmouth.com/"><b>Queens Hotel Portsmouth</b></a>
+        <p id="QueensHotelDistance3"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;65</b></a>
@@ -367,7 +546,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <b><a href="http://www.premierinn.com/gb/en/hotels/england/hampshire/portsmouth/portsmouth-north-harbour.html">Premier Inn Portsmouth North Harbour</b></a>
-        <p></p>
+        <p id="PremierInnDistance3"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;48</b></a>
@@ -389,6 +568,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <a href="http://www.marriott.com/hotels/travel/pmeha-portsmouth-marriott-hotel/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2"><b>Marriott Hotel Portsmouth</b></a>
+        <p id="MarriottHotelDistance3"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;94</b></a>
@@ -410,6 +590,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <a href="https://www.ihg.com/holidayinnexpress/hotels/gb/en/portsmouth/pmesp/hoteldetail"><b>Holiday Inn Express Portsmouth - North</b></a>
+        <p id="HolidayInnExpressDistance3"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;90.25</b></a>
