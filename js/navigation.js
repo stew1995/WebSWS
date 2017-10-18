@@ -30,9 +30,11 @@ $('.dropdown-button').dropdown('open');
 
 //AJAX
 $(document).ready(function () {
+    $("#body").load("home.html");
+
     //Navigation buttons
     $("#homeBtn").click(function () {
-        $("#body").load("index.html");
+        $("#body").load("home.html");
     });
 
     //Whats on
