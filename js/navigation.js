@@ -1,5 +1,5 @@
 $("#topNavSearch").hide();
-
+$("#body").load("home.html");
 <!--Materializecss Slider-->
 $(document).ready(function () {
     // Plugin initialization
@@ -23,10 +23,10 @@ $(document).ready(function () {
 
 //AJAX
 $(document).ready(function () {
-    $("#body").load("home.html");
+
 
     //Navigation buttons
-    $("#homeBtn").click(function () {
+    $("#homeBtn, #homeSideBtn").click(function () {
         $("#body").load("home.html");
     });
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
         $("#body").load("whatson.html")
     });*/
 
-    $("#hotelsBtn").click(function () {
+    $("#hotelsBtn, #hotelsSideBtn").click(function () {
         $("#body").load("hotels.html")
     });
 
@@ -44,12 +44,12 @@ $(document).ready(function () {
         $("#body").load("hotels.html")
     });*/
 
-    $("#mapBtn").click(function () {
+    $("#mapBtn, #mapSideBtn").click(function () {
         $("#body").load("maps.html")
     })
 
 
-    $("#attractionsBtn").click(function () {
+    $("#attractionsBtn, #attractionsSideBtn").click(function () {
         $("#body").load("attractions.html")
     });
 })
