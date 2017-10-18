@@ -1,38 +1,33 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className === "navigation") {
-        x.className += " responsive";
-        $(".searchBox").show();
-    } else {
-        x.className = "navigation";
-        $(".searchBox").hide();
-    }
-}
-
-$(window).resize(function() {
-
-   if($(window).width() > 600) {
-       $(".searchBox").show();
-   }
-
-});
-
+$("#topNavSearch").hide();
+$("#body").load("home.html");
 <!--Materializecss Slider-->
 $(document).ready(function () {
     // Plugin initialization
     $('.slider').slider();
+    $(".button-collapse").sideNav();
 })
 
 $('.dropdown-button').dropdown('open');
 
+/*
+Search bar toggle
+ */
 
+$(document).ready(function () {
+
+    $("#searchBtn").click(function () {
+
+            $("#topNavSearch").toggle("slow");
+    })
+})
 
 //AJAX
 $(document).ready(function () {
+
+
     //Navigation buttons
-    $("#homeBtn").click(function () {
-        $("#body").load("index.html");
+    $("#homeBtn, #homeSideBtn").click(function () {
+        $("#body").load("home.html");
     });
 
     //Whats on
@@ -41,7 +36,7 @@ $(document).ready(function () {
         $("#body").load("whatson.html")
     });*/
 
-    $("#hotelsBtn").click(function () {
+    $("#hotelsBtn, #hotelsSideBtn").click(function () {
         $("#body").load("hotels.html")
     });
 
@@ -49,12 +44,12 @@ $(document).ready(function () {
         $("#body").load("hotels.html")
     });*/
 
-    $("#mapBtn").click(function () {
+    $("#mapBtn, #mapSideBtn").click(function () {
         $("#body").load("maps.html")
     })
 
 
-    $("#attractionsBtn").click(function () {
+    $("#attractionsBtn, #attractionsSideBtn").click(function () {
         $("#body").load("attractions.html")
     });
 })
