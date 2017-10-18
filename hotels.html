@@ -49,13 +49,13 @@
         var loc1 = new google.maps.LatLng(lat1, lon1); //hotel1
         var loc2 = new google.maps.LatLng(50.8457, -1.0920);
 
-            console.log(google.maps.geometry.spherical.computeDistanceBetween(loc1,loc2));
-      //console.log(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(lat1, lon1), new google.maps.LatLng(50.8457, 1.0920)));
-
-        //console.log(google.maps.geometry.spherical.computeDistanceBetween(loc1, loc2));
+            answer = google.maps.geometry.spherical.computeDistanceBetween(loc1,loc2) * 0.000621371192;
+            document.getElementById("demo").innerHTML = answer.toFixed(2) + " Miles Away";
         }
 
      navigator.geolocation.getCurrentPosition(locationNow, options);
+
+     document.getElementById("results").innerHTML = locationNow();
 
    </script>
 
@@ -114,7 +114,7 @@
     <div class="card-stacked">
       <div class="card-content">
         <b><a href="http://www.premierinn.com/gb/en/hotels/england/hampshire/portsmouth/portsmouth-north-harbour.html">Premier Inn Portsmouth North Harbour</b></a>
-        <p></p>
+        <p id="demo"></p>
       </div>
       <div class="card-action">
         <a>Prices from <b>&pound;48</b></a>
