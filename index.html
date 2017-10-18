@@ -18,19 +18,42 @@
 </head>
 <body>
 <!--Navigation-->
-<div class="navigation" id="nav">
-    <a id="homeBtn">Home</a>
-    <a id="whatsonBtn">What's On</a>
-    <a id="hotelsBtn">Hotels</a>
-    <a id="foodanddrinkBtn">Food and Drink</a>
-    <a id="mapBtn">Map</a>
-    <a id="attractionsBtn">Attractions</a>
+<!--Google Materialze-->
+<nav>
+    <div class="nav-wrapper  blue darken-1">
+        <a class="brand-logo center">Visiting Portsmouth</a>
+        <a data-activates="sideNavigation" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a>Home</a></li>
+            <li><a>What's On</a></li>
+            <li><a>Hotels</a></li>
+            <li><a>Food and Drink</a></li>
+            <li><a>Map</a></li>
+            <li><a>Attractions</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+            <li><input id="topNavSearch" type="search" required></li>
 
-    <div class="searchBox">
-        <input type="search" class="searchBar">
+            <li><a id="searchBtn" href="#search"><i class="material-icons">search</i></a></li>
+        </ul>
+
+
+
+        <ul class="side-nav" id="sideNavigation">
+            <li><a><form>
+                <div class="input-field">
+                    <input id="sideNavSearch" type="search" required>
+                </div>
+            </form></a></li>
+            <li><a>Home</a></li>
+            <li><a>What's On</a></li>
+            <li><a>Hotels</a></li>
+            <li><a>Food and Drink</a></li>
+            <li><a>Map</a></li>
+            <li><a>Attractions</a></li>
+        </ul>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+</nav>
 <div id="body">
 
 

@@ -14,6 +14,7 @@
     padding: 18px 24px;
     text-decoration: none;
     font-size: 17px;
+    cursor: pointer;
 }
 
 /* colour of links on hover */
@@ -26,28 +27,14 @@
     display: none;
 }
 
-.searchBox {
-    display: inline-block;
-    width:40%;
-    padding-top: 5px;
-    background: white;
+#topNavSearch {
+    background: whitesmoke;
+    color: black;
+    width: 320px;
+    padding-left: 14px;
+    transition: 3s;
 }
 
-.searchBar {
-    padding-left: 16px  ;
-    background: white;
-}
-
-.drop {
-    width: 250px;
-}
-
-.dropdown-content a {
-    width: 250px;
-}
-.dropdown-content a:hover {
-    background: #EEEEEE;
-}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -71,9 +58,5 @@
         display: block;
         text-align: left;
     }
-    .searchBox {
-        display: none;
-        width: 100%;
 
-    }
 }
