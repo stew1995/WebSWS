@@ -5,3 +5,6 @@
     height: 600px;
 }
 
+.locationTab, a {
+    color: white;
+}

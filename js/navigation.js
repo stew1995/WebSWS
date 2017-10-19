@@ -53,3 +53,9 @@ $(document).ready(function () {
         $("#body").load("attractions.html")
     });
 })
+
+
+//News feed ajax load
+$(document).ready(function () {
+    $("#newsFeed").load("https://feed.mikle.com/js/fw-loader.js" );
+})

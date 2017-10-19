@@ -1,31 +1,11 @@
 /* navigation */
 .navigation {
-    background-color: #03A9F4;
-    overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 8px 23px 56px -7px rgba(117,117,117,0.96);
+    -moz-box-shadow: 8px 23px 56px -7px rgba(117,117,117,0.96);
+    box-shadow: 8px 23px 56px -7px rgba(117,117,117,0.96);
+
 }
 
-/* navigation links */
-.navigation a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 18px 24px;
-    text-decoration: none;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-/* colour of links on hover */
-.navigation a:hover {
-    background-color: #0288D1;
-}
-
-/* icon hidden until on small screen */
-.navigation .icon {
-    display: none;
-}
 
 #topNavSearch {
     background: whitesmoke;
