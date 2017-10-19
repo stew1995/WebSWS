@@ -5,6 +5,7 @@ $(document).ready(function () {
     // Plugin initialization
     $('.slider').slider();
     $(".button-collapse").sideNav();
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
 })
 
 $('.dropdown-button').dropdown('open');
