@@ -1,7 +1,11 @@
-var gMarkers = [];
-var markers = [];
 
-markers = [
+var gmarkers1 = [];
+var markers1 = [];
+var infowindow = new google.maps.InfoWindow({
+    content: ''
+});
+
+markers1  = [
     '0', 'Portsmouth Habour', '50.796947', '-1.107811', 'portsHrb'
 ], [
     '1', 'Portsmouth and Southsea', '50.798513', '-1.090718', 'portsSth'
@@ -29,37 +33,75 @@ markers = [
     '12', 'City Library', '50.796940', '-1.091064', 'library'
 ];
 
+
+/**
+ * Function to init map
+ */
+
+var map;
 function initMap() {
-    var uluru = {lat: 50.8048232, lng:-1.1052416};
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: uluru
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 50.796947,lng: -1.107811},
+        zoom: 8
     });
 
-    for(i=0; i<markers.length; i++) {
-        //add Marker function
-        locationMarkers(markers[i], map)
+    for (i = 0; i < markers1.length; i++) {
+        addMarker(markers1[i]);
     }
 }
 
 
+/**
+ * Function to add marker to map
+ */
 
+function addMarker(marker) {
+    var category = marker[4];
+    var title = marker[1];
+    var pos = new google.maps.LatLng(marker[2], marker[3]);
+    var content = marker[1];
 
-function locationMarkers(markers, map) {
-    var category = markers[4];
-    var title = markers[1];
-    var pos = new google.maps.LatLng(markers[2], markers[3]);
-    var content = markers[1];
-
-    var marker = new google.maps.Marker({
+    marker1 = new google.maps.Marker({
+        title: title,
         position: pos,
+        category: category,
         map: map
     });
 
+    gmarkers1.push(marker1);
+
+    // Marker click listener
+    google.maps.event.addListener(marker1, 'click', (function (marker1, content) {
+        return function () {
+            console.log('Gmarker 1 gets pushed');
+            infowindow.setContent(content);
+            infowindow.open(map, marker1);
+            map.panTo(this.getPosition());
+            map.setZoom(15);
+        }
+    })(marker1, content));
 }
 
+/**
+ * Function to filter markers by category
+ */
 
+filterMarkers = function (category) {
+    for (i = 0; i < markers1.length; i++) {
+        marker = gmarkers1[i];
+        // If is same category or category not picked
+        if (marker.category == category || category.length === 0) {
+            marker.setVisible(true);
+        }
+        // Categories don't match
+        else {
+            marker.setVisible(false);
+        }
+    }
+}
 
+// Init map
+initMap();
 
 $('.dropdown-button').dropdown('open');
 

@@ -50,8 +50,11 @@
                     <p>The Hard Interchange<br>
                         PO1 3EB </p>
                     <!--Checkbox-->
-                    <input type="checkbox" id="ck1" class="filled-in checkbox-orange" />
-                    <label class="secondary-content" for="ck1"></label>
+                    <form>
+                        <input type="checkbox" id="ck1" value="portsHrb" class="filled-in checkbox-orange" />
+                        <label class="secondary-content" for="ck1"></label>
+                    </form>
+
                 </li>
                 <!--Something-->
                 <li class="collection-item avatar">
@@ -63,8 +66,11 @@
                     <p>Commercial Road<br>
                         PO1 1EQ </p>
                     <!--Checkbox-->
-                    <input type="checkbox" id="ck2" class="filled-in checkbox-orange" />
-                    <label class="secondary-content" for="ck2"></label>
+                    <form>
+                        <input type="checkbox" id="ck2" value="portsSth" class="filled-in checkbox-orange" />
+                        <label class="secondary-content" for="ck2"></label>
+                    </form>
+
                 </li>
                 <!--Something-->
                 <li class="collection-item avatar">
@@ -241,10 +247,11 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <!---->
 
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1-aVybRt6Ld1A23kHEe3H0pKsgxEgbao&callback=initMap"
-        type="text/javascript"></script>
-
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1-aVybRt6Ld1A23kHEe3H0pKsgxEgbao&libraries=places&callback=initMap"
+        ></script>
 <script src="js/maps.js" type="text/javascript"></script>
+
+
 </body>
 </html>
